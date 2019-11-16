@@ -1,0 +1,20 @@
+$teal: #067B8D;
+$dark_grey: #606060;
+$blue: #2196F3;
+$yellow: yellow;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 80%;
+}
+
+header {
+    background: $teal;
+}
+
+.menu {
+    margin: 5% auto;
+}

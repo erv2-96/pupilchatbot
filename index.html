@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta name="description" content="Pupil premium">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css">
+    </link>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/app.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js"
+        crossorigin></script>
+</head>
+<header>
+
+</header>
+
+<body>
+    <div class="container">
+        <form id="premiumForm" cf-form>
+
+                <fieldset cf-questions="Do you qualify for any of the following? 
+                <br>- Income based job seeker allowance,
+                <br>- Income related employment and support allowance
+                <br>- National Asylum support,
+                <br>- State pension credit,
+                <br>- Working tax credit">
+                    <input type="radio" name="qualify" cf-label="Yes" />
+                    <input type="radio" name="qualify" cf-label="No" />
+                </fieldset>
+
+                <fieldset cf-questions="Do you receive child tax credits?">
+                    <input type="radio" name="chidTax" cf-label="Yes" />
+                    <input type="radio" name="chidTax" cf-label="No" />
+                </fieldset>
+
+                <fieldset cf-questions="Do you receive universial credit of more than £7,400?">
+                    <input type="radio" name="universialCredit" cf-label="Yes" />
+                    <input type="radio" name="universialCredit" cf-label="No" />
+                </fieldset>
+            
+                <fieldset class="parents">
+                
+                    <label id="parent-name" cf-questions="Please enter parent or guardian full name">
+                        <p>Name</p>
+                        <input type="text">
+                    </label>
+                    <label id="parent-DoB" cf-questions="Please enter parent or guardian date of birth (format dd/mm/yyyy)">
+                        <p>Date of Birth</p>
+                        <input type="text">
+                    </label>
+                    <label id="NI-NA-no" cf-questions="Please enter NI Number or National Asylum number">
+                        <p>NI Number or National Asylum number</p>
+                        <input type="number">
+                    </label>
+                    <label id="phone" cf-questions="Please enter phone number">
+                        <p>Daytime phone number</p>
+                        <input type="number">
+                    </label>
+                    <label id="address" cf-questions="Please enter your full address">
+                        <p>Address</p>
+                        <textarea name="address"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class="pupils">
+                    
+                    <label id="pupil-name" cf-questions="Please enter child name">
+                        <p>Name</p>
+                        <input type="text">
+                    </label>
+                    <label id="pupil-DoB" cf-questions="Please enter child's date of birth (format dd/mm/yyyy)">
+                        <p>Date of Birth</p>
+                        <input type="text">
+                    </label>
+                    <label id="school" cf-questions="Please enter the name of the childs school">
+                        <p>Name of School</p>
+                        <input type="text">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label id="declaration" class="checkbox-wrap" 
+                    cf-questions="Please type your signiture to confirm you agree with the following:
+                    <br><br>The information I have given on this form is complete and accurate. 
+                    <br>I understand that my personal information is held securely and will be used only for Local Authority purposes. 
+                    <br>I agree to the Local Authority using this information to process my application for free school meals.  
+                    <br>I also agree to notify the Local Authority in writing of any change in my family’s financial circumstances as set out in this form">
+                        <input type="text">
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<footer></footer>
+
+</html>
